@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    name: my-crud
+
+datasource:
+  my-connection:
+    jdbc-url: jdbc:postgresql://localhost:5423/books_system
+    username: diego
+    password: diego
+    maximum-pool-size: 10
+    pool-name: "crud-pool"
+    auto-commit: true
