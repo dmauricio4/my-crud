@@ -1,6 +1,7 @@
 package ups.edu.ec.mycrud.config;
 
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +15,7 @@ import java.beans.ConstructorProperties;
 public class DataBaseConfig {
 
     @Bean
-    @ConstructorProperties(prefix = "datasource.my-connection")
+    @ConfigurationProperties(prefix = "datasource.my-connection")
     public DataSource crudDataSource() {
         return DataSourceBuilder.create().build();
     }

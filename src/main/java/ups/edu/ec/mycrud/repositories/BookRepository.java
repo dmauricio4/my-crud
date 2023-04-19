@@ -20,7 +20,7 @@ public class BookRepository {
     }
 
     public List<Book> getAllBooks(){
-        String sql = "select * from book";
+        String sql = "select * from books";
         return  jdbcTemplate.query(sql, mapper);
     }
 

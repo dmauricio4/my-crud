@@ -5,7 +5,7 @@ spring:
 
 datasource:
   my-connection:
-    jdbc-url: jdbc:postgresql://localhost:5423/books_system
+    jdbc-url: jdbc:postgresql://localhost:5432/books_systems
     username: diego
     password: diego
     maximum-pool-size: 10
